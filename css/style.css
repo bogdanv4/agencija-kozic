@@ -79,6 +79,31 @@ body {
   display: none;
 }
 
+.topnav .logo-link {
+  display: flex;
+  align-items: center;
+  padding: 8.5px 16px;
+}
+
+.topnav .logo-link img {
+  height: 38px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.topnav .logo-link:hover {
+  background-color: var(--primary-accent);
+}
+
+.topnav .logo-link:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.topnav .logo-link.active {
+  background-color: var(--primary-accent);
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -395,6 +420,14 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+
+  .topnav .logo-link {
+    padding: 12px 16px;
+  }
+
+  .topnav .logo-link img {
+    height: 32px;
   }
 
   .topnav.responsive {
