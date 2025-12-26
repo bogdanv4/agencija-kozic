@@ -320,6 +320,58 @@ body {
   color: var(--text-light);
 }
 
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-accent);
+  color: var(--text-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: var(--primary-accent-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(44, 95, 124, 0.4);
+}
+
+.back-to-top i {
+  font-size: 20px;
+}
+
+/* Contact Map */
+.contact-map {
+  width: 100%;
+  height: 450px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact-map .leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 968px) {
@@ -389,5 +441,21 @@ body {
   .about-section,
   .contact-section {
     padding: 60px 0;
+  }
+
+  .contact-map {
+    height: 350px;
+    margin-top: 30px;
+  }
+
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .back-to-top i {
+    font-size: 18px;
   }
 }

@@ -42,4 +42,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", updateActiveNav);
   updateActiveNav();
+
+  // Back to Top Button
+  const backToTopButton = document.getElementById("backToTop");
+
+  function toggleBackToTop() {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add("visible");
+    } else {
+      backToTopButton.classList.remove("visible");
+    }
+  }
+
+  window.addEventListener("scroll", toggleBackToTop);
+  toggleBackToTop();
+
+  // Initialize Map
+  if (typeof L !== "undefined" && document.getElementById("map")) {
+    const map = L.map("map").setView([44.7643025348378, 20.4987253680443], 16);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Add marker at company location
+    L.marker([44.7643025348378, 20.4987253680443])
+      .addTo(map)
+      .bindPopup(
+        "<b>Računovodstvena agencija Kozić</b><br>Braće Jerković 185a<br>11000 Beograd"
+      )
+      .openPopup();
+  }
 });
