@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +14,16 @@
 }
 
 :root {
-  /* Color Scheme - Based on Logo */
   --primary-dark: #444342;
-  --primary-accent: #2C5F7C;
-  --primary-accent-hover: #1E4A5F;
-  --secondary-accent: #6B7A8F;
-  --bg-light: #F5F5F5;
-  --bg-white: #FFFFFF;
-  --text-dark: #2C2C2C;
-  --text-light: #F8F8F8;
-  --text-white: #FFFFFF;
-  --navbar-bg: #2C2C2C;
+  --primary-accent: #2c5f7c;
+  --primary-accent-hover: #1e4a5f;
+  --secondary-accent: #6b7a8f;
+  --bg-light: #f5f5f5;
+  --bg-white: #ffffff;
+  --text-dark: #2c2c2c;
+  --text-light: #f8f8f8;
+  --text-white: #ffffff;
+  --navbar-bg: #2c2c2c;
 }
 
 html {

@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <meta
+      name="description"
+      content="Računovodstvena agencija Kozić - Vaš partner u vođenju poslovnih finansija."
     />
+    <meta
+      name="keywords"
+      content="računovodstvo, knjigovodstvo, PDV, eko takse, završni računi, prijave zaposlenih"
+    />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    </noscript>
     <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="./img/hero.jpg" as="image" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
     <title>Agencija Kozić</title>
   </head>
   <body>
@@ -17,144 +36,147 @@
       <a href="#usluge">Usluge</a>
       <a href="#o-nama">O nama</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="javascript:void(0);" id="burger-icon" class="icon">
+      <a href="#" id="burger-icon" class="icon" aria-label="Open Menu">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <div class="hero" id="home">
-      <div class="hero-text">
-        <h1>
-          Vaše finansije <br />
-          naša briga
-        </h1>
-        <p>
-          Dobrodošli! Mi smo <strong>Računovodstvena agencija Kozić</strong>,
-          vaš dugogodišnji partner u vođenju poslovnih finansija. Naš zadatak je
-          da vam olakšamo poslovanje, da se ne brinete o knjigama, papirima i
-          rokovima, već da imate više vremena za svoj posao i svoje ideje.
-          Verujemo u otvorenu komunikaciju, poverenje i jednostavna rešenja. Tu
-          smo da vam objasnimo sve što nije jasno i da zajedno pronađemo
-          najbolji način da vaše poslovanje bude uredno, sigurno i uspešno.
-        </p>
-        <a href="#kontakt" class="hero-button">Kontaktirajte nas</a>
+    <main>
+      <div class="hero" id="home">
+        <div class="hero-text">
+          <h1>
+            Vaše finansije <br />
+            naša briga
+          </h1>
+          <p>
+            Dobrodošli! Mi smo <strong>Računovodstvena agencija Kozić</strong>,
+            vaš dugogodišnji partner u vođenju poslovnih finansija. Naš zadatak
+            je da vam olakšamo poslovanje, da se ne brinete o knjigama, papirima
+            i rokovima, već da imate više vremena za svoj posao i svoje ideje.
+            Verujemo u otvorenu komunikaciju, poverenje i jednostavna rešenja.
+            Tu smo da vam objasnimo sve što nije jasno i da zajedno pronađemo
+            najbolji način da vaše poslovanje bude uredno, sigurno i uspešno.
+          </p>
+          <a href="#kontakt" class="hero-button">Kontaktirajte nas</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Our Services Section -->
-    <section id="usluge" class="services-section">
-      <div class="container">
-        <h2 class="section-heading">Naše Usluge</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <img src="./img/usluge1.jpg" alt="Usluga 1" />
-            <div class="service-content">
-              <h3>Vođenje Poslovnih Knjiga</h3>
-              <p>Vođenje poslovnih knjiga za vaše preduzeće.</p>
+      <!-- Our Services Section -->
+      <section id="usluge" class="services-section">
+        <div class="container">
+          <h2 class="section-heading">Naše Usluge</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <img src="./img/usluge1.webp" alt="Usluga 1" />
+              <div class="service-content">
+                <h3>Vođenje Poslovnih Knjiga</h3>
+                <p>Vođenje poslovnih knjiga za vaše preduzeće.</p>
+              </div>
             </div>
-          </div>
-          <div class="service-card">
-            <img src="./img/usluge2.jpg" alt="Usluga 2" />
-            <div class="service-content">
-              <h3>Osnivanje Firmi i Udruženja</h3>
-              <p>Osnivanje firme ili udruženja za vaše potrebe.</p>
+            <div class="service-card">
+              <img src="./img/usluge2.webp" alt="Usluga 2" />
+              <div class="service-content">
+                <h3>Osnivanje Firmi i Udruženja</h3>
+                <p>Osnivanje firme ili udruženja za vaše potrebe.</p>
+              </div>
             </div>
-          </div>
-          <div class="service-card">
-            <img src="./img/usluge3.jpg" alt="Usluga 3" />
-            <div class="service-content">
-              <h3>PDV Obračuni</h3>
-              <p>Obračun PDV-a za vaše preduzeće.</p>
+            <div class="service-card">
+              <img src="./img/usluge3.webp" alt="Usluga 3" />
+              <div class="service-content">
+                <h3>PDV Obračuni</h3>
+                <p>Obračun PDV-a za vaše preduzeće.</p>
+              </div>
             </div>
-          </div>
-          <div class="service-card">
-            <img src="./img/usluge4.jpg" alt="Usluga 4" />
-            <div class="service-content">
-              <h3>Eko Takse</h3>
-              <p>Eko taksa za vaše preduzeće.</p>
+            <div class="service-card">
+              <img src="./img/usluge4.webp" alt="Usluga 4" />
+              <div class="service-content">
+                <h3>Eko Takse</h3>
+                <p>Eko taksa za vaše preduzeće.</p>
+              </div>
             </div>
-          </div>
-          <div class="service-card">
-            <img src="./img/usluge5.jpg" alt="Usluga 5" />
-            <div class="service-content">
-              <h3>Završni Računi</h3>
-              <p>Završni računi za vaše preduzeće.</p>
+            <div class="service-card">
+              <img src="./img/usluge5.webp" alt="Usluga 5" />
+              <div class="service-content">
+                <h3>Završni Računi</h3>
+                <p>Završni računi za vaše preduzeće.</p>
+              </div>
             </div>
-          </div>
-          <div class="service-card">
-            <img src="./img/usluge6.jpg" alt="Usluga 6" />
-            <div class="service-content">
-              <h3>Prijave i Odjave Zaposlenih</h3>
-              <p>Prijave i odjave zaposlenih za vaše preduzeće.</p>
+            <div class="service-card">
+              <img src="./img/usluge6.webp" alt="Usluga 6" />
+              <div class="service-content">
+                <h3>Prijave i Odjave Zaposlenih</h3>
+                <p>Prijave i odjave zaposlenih za vaše preduzeće.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Us Section -->
-    <section id="o-nama" class="about-section">
-      <div class="container">
-        <h2 class="section-heading">O nama</h2>
-        <div class="about-content">
-          <div class="about-image">
-            <img src="./img/about.jpg" alt="O nama" />
-          </div>
-          <div class="about-text">
-            <h3>Računovodstvena agencija Kozić</h3>
-            <p>
-              Agencija Kozić je agencija sa višegodišnjim iskustvom iz oblasti
-              računovodstva. Od prvog dana osnivanja 2005. obezbeđujemo
-              profesionalne, visokokvalitetne usluge, bilo da ste preduzetnik,
-              mala firma ili velika kompanija. To ne kažemo samo mi, to je i
-              mišljenje preko 300 zadovoljnih klijenata.
-            </p>
-            <p>
-              Verujemo u izgradnju dugoročnih partnerstava sa našim klijentima,
-              pružajući im podršku u svim aspektima finansijskog poslovanja.
-              Naša misija je da vam olakšamo poslovanje i omogućimo vam da se
-              fokusirate na ono što najbolje znate - razvoj vašeg posla.
-            </p>
-            <p>
-              Kontaktirajte nas danas i saznajte kako možemo pomoći vašem
-              preduzeću da postigne svoje ciljeve.
-            </p>
-            <br />
-            <a href="#kontakt" class="hero-button">Kontaktirajte nas</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="kontakt" class="contact-section">
-      <div class="container">
-        <h2 class="section-heading">Kontakt</h2>
-        <div class="contact-content">
-          <div class="contact-item">
-            <i class="fa fa-phone"></i>
-            <div class="contact-info">
-              <h3>Telefon</h3>
-              <p>+381 11 396 1445</p>
-              <p>+381 63 371 669</p>
+      <!-- About Us Section -->
+      <section id="o-nama" class="about-section">
+        <div class="container">
+          <h2 class="section-heading">O nama</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="./img/about.webp" alt="O nama" />
             </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-envelope"></i>
-            <div class="contact-info">
-              <h3>Email</h3>
-              <p>agencijaboki@mts.rs</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-map-marker"></i>
-            <div class="contact-info">
-              <h3>Adresa</h3>
-              <p>Braće Jerković 185a, 11000 Beograd</p>
+            <div class="about-text">
+              <h3>Računovodstvena agencija Kozić</h3>
+              <p>
+                Agencija Kozić je agencija sa višegodišnjim iskustvom iz oblasti
+                računovodstva. Od prvog dana osnivanja 2005. obezbeđujemo
+                profesionalne, visokokvalitetne usluge, bilo da ste preduzetnik,
+                mala firma ili velika kompanija. To ne kažemo samo mi, to je i
+                mišljenje preko 300 zadovoljnih klijenata.
+              </p>
+              <p>
+                Verujemo u izgradnju dugoročnih partnerstava sa našim
+                klijentima, pružajući im podršku u svim aspektima finansijskog
+                poslovanja. Naša misija je da vam olakšamo poslovanje i
+                omogućimo vam da se fokusirate na ono što najbolje znate -
+                razvoj vašeg posla.
+              </p>
+              <p>
+                Kontaktirajte nas danas i saznajte kako možemo pomoći vašem
+                preduzeću da postigne svoje ciljeve.
+              </p>
+              <br />
+              <a href="#kontakt" class="hero-button">Kontaktirajte nas</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="kontakt" class="contact-section">
+        <div class="container">
+          <h2 class="section-heading">Kontakt</h2>
+          <div class="contact-content">
+            <div class="contact-item">
+              <i class="fa fa-phone"></i>
+              <div class="contact-info">
+                <h3>Telefon</h3>
+                <p>+381 11 396 1445</p>
+                <p>+381 63 371 669</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa fa-envelope"></i>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>agencijaboki@mts.rs</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa fa-map-marker"></i>
+              <div class="contact-info">
+                <h3>Adresa</h3>
+                <p>Braće Jerković 185a, 11000 Beograd</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -171,7 +193,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="./js/script.js"></script>
   </body>
 </html>
