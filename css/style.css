@@ -431,7 +431,7 @@ body {
   }
 
   .topnav.responsive {
-    position: relative;
+    position: sticky;
   }
   .topnav.responsive a.icon {
     position: absolute;

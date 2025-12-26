@@ -1,6 +1,7 @@
 // Mobile menu toggle
 const burgerIcon = document.getElementById("burger-icon");
-burgerIcon.addEventListener("click", function () {
+burgerIcon.addEventListener("click", function (e) {
+  e.preventDefault();
   const x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -15,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update active nav link on scroll
   const sections = document.querySelectorAll("section[id], .hero[id]");
   const navLinksArray = Array.from(navLinks).filter(function (link) {
-    return link.getAttribute("href").startsWith("#");
+    const href = link.getAttribute("href");
+    return href && href.startsWith("#");
   });
 
   function updateActiveNav() {
