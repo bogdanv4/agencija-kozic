@@ -50,7 +50,7 @@ body {
   overflow: hidden;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1001;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -401,9 +401,22 @@ body {
   border-radius: 10px;
 }
 
+.leaflet-control-attribution {
+  display: none !important;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 968px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -457,15 +470,6 @@ body {
     float: none;
     display: block;
     text-align: left;
-  }
-
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-    max-width: 90%;
   }
 
   .section-heading {
